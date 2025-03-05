@@ -15,7 +15,7 @@
             p1.name = "Al Momen";
             p1.age = 24;
             Console.WriteLine("Person1:");
-            Console.WriteLine($"Name: {p1.name},Age: {p1.age}");
+            Console.WriteLine($"Name: {p1.name},Age: {p1.age}\n");
 
 
             Person p2 = new Person();
