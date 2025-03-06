@@ -1,28 +1,52 @@
-﻿namespace OOP
+﻿using System;
+using System.Runtime.Serialization;
+
+namespace OOP
 {
 
    class Person
-    {
+    {    
+        // Using 2 field-> name and age
         public string name;
         public int age;
+
+
+        // Method-> DisplayInfo
+        public void DisplayInfo()
+        {
+            Console.WriteLine($"Name: {name},Age: {age}\n");
+        }
+
+
+        // Method-> SetValue
+        public void SetValue(string n,int a)
+        {
+            name = n;
+            age = a;
+        }
+
+
     }
 
     internal class Program
     {
         static void Main(string[] args)
-        {
+        {   
+            //Object-> p1
             Person p1 = new Person();
-            p1.name = "Al Momen";
-            p1.age = 24;
-            Console.WriteLine("Person1:");
-            Console.WriteLine($"Name: {p1.name},Age: {p1.age}\n");
 
+            p1.SetValue("Al Momen", 24);
+            p1.DisplayInfo();
+            
+         
 
+            // Object-> p2
             Person p2 = new Person();
-            p2.name = "Samiul Islam";
-            p2.age = 26;
-            Console.WriteLine("Person2: ");
-            Console.WriteLine($"Name: {p2.name}, Age: {p2.age}");
+            
+            p2.SetValue("Muntasir Asif", 25);
+            p2.DisplayInfo();
+            
+            
         }   
     }
 }
