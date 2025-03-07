@@ -70,7 +70,8 @@ namespace OOP
             //Object-> 3
             Person p3 = new Person();
             Console.WriteLine("This is default constructor example below:  ");
-            p3.DisplayInfo();            
+            p3.DisplayInfo(); 
+            
         }   
     }
 }
